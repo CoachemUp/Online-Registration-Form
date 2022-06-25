@@ -1,0 +1,76 @@
+/*  =======================
+    Universial Selector 
+========================  */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+
+/*  =======================
+    Header Style
+========================  */
+
+.site-header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(9, 39, 58);
+    color: white;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+/*  =======================
+    Intro Style
+========================  */
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+/*  =======================
+    Fieldset Style
+========================  */
+
+#news {
+    background-color: rgb(104, 4, 4);
+    border: none;
+}
+
+#contact {
+    background-color: #c3fc07;
+    border: none;
+}
+
+
+
+
+
+
+
+
+/*  =======================
+    Input Styles
+========================  */
+input[type="email"]{
+    text-align: right;
+    background-color: #ddd;
+}
+
+input[type="text"]{
+    text-align: right;
+}
+
+input[type="tel"]{
+    text-align: right;
+}
+
+input[type="number"]{
+    text-align: right;
+}
+

@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/styles.css" rel="stylesheet">
-  <title>Navigation Position Change</title>
+  <title>The Code Review</title>
 </head>
 <body>
-
+    <header class="site-header">the code review</header>
+    <div class="intro">
+        <h1>Signup for our newsletter</h1>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
     <form method="post">
-        <fieldset>
+        <fieldset id="contact">
+            <legend>Contact Information</legend>
         <ul>
             <li>
                 <label for="name">Full Name</label>
@@ -23,37 +28,38 @@
 
             <li>
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user_phone">
+                <input type="tel" id="phone" name="user_phone" placeholder="0-123-456-7890">
             </li>
 
             <li>
                 <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address">
+                <input type="text" id="address" name="user_address" placeholder="Required">
             </li>
 
             <li> 
                 <label for="city">City</label>
-                <input type="text" id="city" name="user_city">
+                <input type="text" id="city" name="user_city" placeholder="Required">
             </li> 
 
             <li>
                 <label for="state">State</label>
-                <input type="state" id="state" name="user_state">
+                <input type="state" id="state" name="user_state" placeholder="Required">
             </li>
 
             <li>
                 <label for="code">Zip Code</label>
-                <input type="number" id="code" name="user_zipcode">
+                <input type="number" id="code" name="user_zipcode" placeholder="Required">
             </li>
         </ul>
         </fieldset>
 
            <hr>
 
-        <fieldset>
+        <fieldset id="news">
+            <legend>Newsletter</legend>
+            <p>Select the newsletters you would like to recieve</p>
         <ul>
             <li>
-                
                 <input type="checkbox" id="html" name="html">
                 <label for="html">HTML News</label>
             </li>
@@ -68,7 +74,8 @@
                 <label for="java">Javascript News</label>
             </li>
         
-        </ul>  
+        </ul> 
+            <p>Newsletter format</p> 
         <ul>
             <li>
                 <input type="radio" id="html" name="fav_language" value="HTML">
@@ -79,8 +86,8 @@
                 <label for="html">Plain text</label><br>
             </li>
         </ul>
-
-            <label for="topics">Other topics you'd like to hear about</label>
+            <p>Other topics you'd like to hear about</p>
+            <label for="topics"></label>
             <textarea id="topics" name="topics">
             </textarea>
 
