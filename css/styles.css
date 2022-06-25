@@ -34,28 +34,58 @@
 }
 
 /*  =======================
+    Form Style
+========================  */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: 
+    width: 100%;
+  
+    justify-content: center;
+  
+    align-items: center;
+    padding: 0px;
+}
+
+legend {
+    padding-left: 20px;
+}
+/*  =======================
     Fieldset Style
 ========================  */
 
 #news {
-    background-color: rgb(104, 4, 4);
-    border: none;
+   border: none;
 }
 
 #contact {
-    background-color: #c3fc07;
-    border: none;
+   border: none;
 }
 
+/*  =======================
+    Placeholder Style
+========================  */
+::placeholder {
+    color: black;
+    font-size: .5em;
+    font-style: italic;
+    padding: 5px;
+}
 
-
+#topic {
+    color: black;
+    font-size: .5em;
+    font-style: italic;
+    padding: 5px; 
+}
 
 
 
 
 
 /*  =======================
-    Input Styles
+    Input Style
 ========================  */
 input[type="email"]{
     text-align: right;
@@ -64,13 +94,57 @@ input[type="email"]{
 
 input[type="text"]{
     text-align: right;
+    background-color: #ddd;
 }
 
 input[type="tel"]{
     text-align: right;
+    background-color: #ddd;
 }
 
 input[type="number"]{
     text-align: right;
+    background-color: #ddd;
 }
 
+
+
+/*  =======================
+    General Styles
+========================  */
+
+ul {
+    list-style-type: none;
+    padding:  10px;
+    decoration
+}
+
+ul li {
+    padding:  10px;
+}
+
+
+label { 
+    display: inline-block; 
+    float: left; 
+    clear: left; 
+    width: 90px; 
+    margin:5px; 
+    text-align: left; 
+} 
+ 
+#line-1 {
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 3px;
+    
+}
+
+#line-2 {
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    margin-right: 20px;
+    margin-left: 20px;
+}
