@@ -66,12 +66,6 @@ body {
 }
 
 /*  =======================
-    Form Style
-========================  */
-
-
-
-/*  =======================
     Fieldset Style
 ========================  */
 
@@ -82,11 +76,9 @@ body {
  }
 
 legend {
-    margin-bottom: 5px;
+    margin-bottom: px;
 }
 
-
- 
  ul {
     list-style-type: none;
  }
@@ -125,11 +117,10 @@ input, select {
     font-style: italic;
 }
 
-
-
 /*  =======================
     Input Style
 ========================  */
+
 input[type="email"]{
     text-align: left;
     background-color: #ddd;
@@ -164,11 +155,6 @@ select{
     box-sizing: border-box; 
 }
 
-
-
-
-
-
 /*  =======================
     Form Containers
 ========================  */
@@ -188,22 +174,29 @@ select{
     font-size: .875em;
   }
 
-
 #news {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    opacity: .6;
     border: none;
     font-size: .8em;
     margin: 20px 15px;
 }
 
+#news ul li {
+   
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
 
-#news ul li{
-    color: blue;
-    padding-bottom: 10px;
-    padding-top: 10px;
+#news p {
+    padding-top: 15px;
+    opacity: .5;
+}
+
+#news label {
+    padding-left: 10px;
+    opacity: .5;
 }
 
 
