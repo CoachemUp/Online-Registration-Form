@@ -154,9 +154,9 @@ input[type=tel]:focus {
     border: 3px solid #555; 
 }
 
-input[type=radio]:hover {
-    box-shadow: 0 0 5px 0px blue inset;
-}
+textarea:focus {
+    border:  3px solid #555;
+  }
 
 
 /*  =======================
@@ -224,6 +224,7 @@ textarea::placeholder {
 /*  =======================
     Button Style
 ========================  */
+
 #signupbtn {
     display: flex;
     justify-content: center;
