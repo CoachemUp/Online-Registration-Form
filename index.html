@@ -23,7 +23,7 @@
     <form method="post">
         <fieldset id="contact">
 
-            <legend><h4>Contact Information</h4></legend>
+            <legend><h4>Contact Information</h4></legend><br>
         <ul class="flex-contact">
             <li>
                 <label for="name">Full Name</label>
@@ -128,7 +128,7 @@
            
             <li>
                 <input type="checkbox" id="html" name="html">
-                <label for="html">HTML News</label>
+                <label class="check"for="html">HTML News</label>
             </li>
 
             <li>
@@ -150,27 +150,30 @@
             </li>
 
             <li>
-                <input type="radio" id="html-2" name="fav_language" value="HTML">
-                <label for="html">HTML</label>
+                <input type="radio" id="html-2" name="fav_language" value="html-2">
+                <label for="html-2">HTML</label>
             </li>
 
             <li>
-                <input type="radio" id="plain-text" name="fav_language" value="HTML">
-                <label for="html">Plain text</label>
+                <input type="radio" id="plain-text" name="fav_language" value="plain-text">
+                <label for="plain-text">Plain text</label>
             </li>
 
             <li>
                 <p>Other topics you'd like to hear about</p>
             </li>
-
+        
+        
             <li>
                 <label for="topics"></label>
                 <textarea id="topics" name="topics" placeholder="Tell me what you want to hear about..."></textarea>
             </li>
-        </ul> 
-
-            <button type="submit" class="signupbtn">Sign Up</button>
         
+
+
+        </ul>
+        <button id="signupbtn"
+        type="button">Sign Up</button>
         </fieldset>
     </form>
 
