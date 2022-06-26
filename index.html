@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/styles.css" rel="stylesheet">
-  <title>The Code Review</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>The Code Review</title>
 </head>
 <body>
     <header class="site-header">the code review</header>
     <div class="intro">
-        <h1>Signup for our newsletter</h1>
+        <h4>Signup for our newsletter</h4>
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </div>
 
     <hr id="line-1">
-    <hr id="line-2">
+    <hr class="line-2">
 
-   <br>
+   
     <form method="post">
         <fieldset id="contact">
 
-            <legend><h3>Contact Information</h3></legend>
-        <ul>
+            <legend><h4>Contact Information</h4></legend>
+        <ul class="flex-contact">
             <li>
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="user_name" placeholder="Required" required>
@@ -113,14 +116,16 @@
       
         </fieldset>
 
-        <hr id="line-2"> 
+        <hr class="line-2"> 
         
         <fieldset id="news">
-            
-            <legend><h3>Newsletter</h3></legend>
-            <br>
-            <p>Select the newsletters you would like to recieve</p>
-        <ul>
+            <legend><h4>Newsletter</h4></legend>
+
+        <ul >
+            <li>
+                <p>Select the newsletters you would like to recieve</p>
+            </li>
+           
             <li>
                 <input type="checkbox" id="html" name="html">
                 <label for="html">HTML News</label>
@@ -135,66 +140,40 @@
                 <input type="checkbox" id="java" name="java">
                 <label for="java">Javascript News</label>
             </li>
+        </ul>
         
-        </ul> 
-            <p>Newsletter format</p> 
-        <ul>
+         
+            
+        <ul class="flex-news">
             <li>
-                <input type="radio" id="html" name="fav_language" value="HTML">
+                <p>Newsletter format</p>
+            </li>
+
+            <li>
+                <input type="radio" id="html-2" name="fav_language" value="HTML">
                 <label for="html">HTML</label>
             </li>
+
             <li>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">Plain text</label><br>
+                <input type="radio" id="plain-text" name="fav_language" value="HTML">
+                <label for="html">Plain text</label>
             </li>
-        </ul>
-            <p>Other topics you'd like to hear about</p>
-            <label for="topics"></label>
-            <textarea id="topics" name="topics" placeholder="Tell me what you want to hear about..."></textarea>
-            
+
+            <li>
+                <p>Other topics you'd like to hear about</p>
+            </li>
+
+            <li>
+                <label for="topics"></label>
+                <textarea id="topics" name="topics" placeholder="Tell me what you want to hear about..."></textarea>
+            </li>
+        </ul> 
 
             <button type="submit" class="signupbtn">Sign Up</button>
-            </fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        </fieldset>
     </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>Copyright The Code Review</footer>
 </body>
 </html>

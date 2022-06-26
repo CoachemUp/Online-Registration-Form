@@ -8,6 +8,16 @@
     padding: 0;
 }
 
+body {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Merriweather', Arial, Verdana;
+    color: black;
+    background-color: #ffffff;
+  }
+
 /*  =======================
     Header Style
 ========================  */
@@ -18,7 +28,7 @@
     background-color: rgb(9, 39, 58);
     color: white;
     text-transform: uppercase;
-    padding: 30px;
+    padding: 20px;
 }
 
 /*  =======================
@@ -29,58 +39,91 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    margin: 15px;
+}
 
+.intro p {
+    font-size: .8em;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0.5;
+}
+
+/*  =======================
+    Line Style
+========================  */
+
+#line-1 {
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+    margin: 15px 5px 5px;
+}
+
+.line-2 {
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 5px 0;
 }
 
 /*  =======================
     Form Style
 ========================  */
-form {
-    display: flex;
-    flex-direction: column;
-    background-color: 
-    width: 100%;
-  
-    justify-content: center;
-  
-    align-items: center;
-    padding: 0px;
-}
 
-legend {
-    padding-left: 20px;
-}
+
+
 /*  =======================
     Fieldset Style
 ========================  */
 
-#news {
-   border: none;
+#contact  {
+    border: none;
+    font-size: .8em;
+    margin: 20px 15px;
+ }
+
+legend {
+    margin-bottom: 5px;
 }
 
-#contact {
-   border: none;
+
+ 
+ ul {
+    list-style-type: none;
+ }
+
+ textarea {
+    border: none;
+    background-color: lightgray;
+    resize: none;
+    outline: none;
 }
+
+input, select {
+    border: none;
+    background-color: lightgray;
+    resize: none;
+    outline: none;
+}
+
+#state  {
+    color: rgba(0, 0, 0, 0.2);
+ }
 
 /*  =======================
     Placeholder Style
 ========================  */
 ::placeholder {
-    color: black;
+    opacity: 0.5;
     font-size: .5em;
     font-style: italic;
-    padding: 5px;
+    text-align: right;
 }
 
 #topic {
     color: black;
     font-size: .5em;
     font-style: italic;
-    padding: 5px; 
 }
-
-
 
 
 
@@ -88,63 +131,91 @@ legend {
     Input Style
 ========================  */
 input[type="email"]{
-    text-align: right;
+    text-align: left;
     background-color: #ddd;
 }
 
 input[type="text"]{
-    text-align: right;
+    text-align: left;
     background-color: #ddd;
 }
 
 input[type="tel"]{
-    text-align: right;
+    text-align: left;
     background-color: #ddd;
 }
 
 input[type="number"]{
-    text-align: right;
+    text-align: left;
     background-color: #ddd;
 }
+
+input[type=text], 
+input[type="email"], 
+input[type="tel"],
+select{ 
+    text-align: left;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+
+
 
 
 
 /*  =======================
-    General Styles
+    Form Containers
 ========================  */
 
-ul {
-    list-style-type: none;
-    padding:  10px;
-    decoration
+.flex-contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-ul li {
-    padding:  10px;
+.flex-contact > li > label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 0 0 0;
+    opacity: .5;
+    font-size: .875em;
+  }
+
+
+#news {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    opacity: .6;
+    border: none;
+    font-size: .8em;
+    margin: 20px 15px;
 }
 
 
-label { 
-    display: inline-block; 
-    float: left; 
-    clear: left; 
-    width: 90px; 
-    margin:5px; 
-    text-align: left; 
-} 
- 
-#line-1 {
-    height: 10px;
-    background-color: rgb(0, 0, 0);
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 3px;
-    
+#news ul li{
+    color: blue;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
-#line-2 {
-    height: 5px;
-    background-color: rgb(0, 0, 0);
-    margin-right: 20px;
-    margin-left: 20px;
-}
+
+  
+  
+
+
+
+
+
+
+
+
+
+
