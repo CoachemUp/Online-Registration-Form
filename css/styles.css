@@ -30,26 +30,6 @@ input, select {
     outline: none;
 }
 
-input[type="email"]{
-    text-align: left;
-    background-color: #ddd;
-}
-
-input[type="text"]{
-    text-align: left;
-    background-color: #ddd;
-}
-
-input[type="tel"]{
-    text-align: left;
-    background-color: #ddd;
-}
-
-input[type="number"]{
-    text-align: left;
-    background-color: #ddd;
-}
-
 input[type=text], 
 input[type="email"], 
 input[type="tel"],
@@ -63,6 +43,15 @@ select{
     border-radius: 4px;
     box-sizing: border-box; 
 }
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+input[type="number"]{
+    text-align: left;
+    background-color: #ddd;
+}
+
 #code {
     width: 50%;
 }
@@ -82,8 +71,6 @@ input[type=tel]:focus {
     font-style: italic;
     text-align: right;
 }
-
-
 
 /*  =======================
     Header and Intro Style
@@ -154,22 +141,26 @@ input[type=tel]:focus {
 .news {
     display: flex;
     flex-direction: column;
+    
     flex-wrap: wrap;
     font-size: .8em;
     opacity: .5;
     border: none;
     margin: 20px 15px;
 }
+
 /*  =======================
     Chex Style
 =========================== */
-
-input[type="radio"],
-input[type="checkbox"]{
-width:5%;
-margin-right: 0;
-
+#chex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+label #chex{
+    display:inline-block;
+  }
 
 
 
@@ -266,18 +257,9 @@ footer {
 
     .intro p {
         font-size: .5em;
-
+    }
   
 } 
 /*  ============================
     Media Queries for 
 ================================ */
-
-
-
-
-
-
-
-
-
