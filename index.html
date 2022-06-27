@@ -108,25 +108,40 @@
 
                 <p>Select the newsletters you would like to recieve</p>
 <!-- This the Area that users use the Checkbox.  They are children in the NEWS Flexbox, but are wrapped in thier own Flexbox called CHEX. -->
-                    <section id="chex">
-                        <label for="html">HTML News</label>
-                        <input type="checkbox" id="html" name="html">
-                        
-                        <label for="css">CSS News</label>
-                        <input type="checkbox" id="css" name="css">
-                        
-                        <label for="java">Javascript News</label>
-                        <input type="checkbox" id="java" name="java"> 
+                    <section>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="html" name="html">
+                                <label for="html">HTML News</label>
+                                
+                            </li>
+                            <li>
+                                <input type="checkbox" id="css" name="css">
+                                <label for="css">CSS News</label>
+                               
+                            </li>
+                            <li>
+                                <input type="checkbox" id="java" name="java"> 
+                                <label for="java">Javascript News</label>
+                            </li>
+                        </ul>
                     </section>   
 
                 <p>Newsletter format</p>
 <!-- This the Area that users use the Radio bottons.  They are children in the NEWS Flexbox, but are wrapped in thier own Flexbox called RADIO. -->
-                    <input type="radio" id="html-2" name="fav_language" value="html-2">
-                    <label for="html-2">HTML</label>
+                    
+                        <ul>
+                            <li>
+                                <input type="radio" id="html-2" name="fav_language" value="html-2">
+                                <label for="html-2">HTML</label>
+                            </li>
             
-                    <input type="radio" id="plain-text" name="fav_language" value="plain-text">
-                    <label for="plain-text">Plain text</label>
-
+                    
+                            <li>        
+                                <input type="radio" id="plain-text" name="fav_language" value="plain-text">
+                                <label for="plain-text">Plain text</label>
+                            </li>
+                        </ul>
                 <p>Other topics you'd like to hear about</p>
         
 <!-- This the textarea, Contained in the NEWS FlexBox -->
