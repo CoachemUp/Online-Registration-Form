@@ -1,6 +1,6 @@
-/*  =======================
-    Universial Selector 
-========================  */
+/*  =======================================
+    These Styles apply to all of the Page 
+===========================================  */
 
 * {
     box-sizing: border-box;
@@ -17,70 +17,11 @@ body {
     font-family: 'Merriweather', Arial, Verdana;
     color: black;
     background-color: #ffffff;
-  }
-
-/*  =======================
-    Header Style
-========================  */
-
-.site-header {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(9, 39, 58);
-    color: white;
-    text-transform: uppercase;
-    padding: 20px;
 }
 
 /*  =======================
-    Intro Style
-========================  */
-.intro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 15px;
-}
-
-.intro p {
-    font-size: .8em;
-    text-align: center;
-    padding: 10px 0;
-    opacity: 0.5;
-}
-
-/*  =======================
-    Line Style
-========================  */
-
-#line-1 {
-    display: flex;
-    height: 6px;
-    background-color: rgb(0, 0, 0);
-    margin: 15px 5px 5px;
-}
-
-.line-2 {
-    display: flex;
-    height: 3px;
-    background-color: rgb(0, 0, 0);
-    margin: 0 5px 0;
-}
-
-/*  =======================
-    Fieldset Style
-========================  */
-
-#contact  {
-    border: none;
-    font-size: .8em;
-    margin: 20px 15px;
- }
-
- ul {
-    list-style-type: none;
- }
+    Input Style
+===========================  */
 
 input, select {
     border: none;
@@ -88,32 +29,6 @@ input, select {
     resize: none;
     outline: none;
 }
-
-
-#state  {
-    color: rgba(0, 0, 0, 0.2);
- }
-
-/*  =======================
-    Placeholder Style
-========================  */
-
-::placeholder {
-   color: black;
-    font-size: .5em;
-    font-style: italic;
-    text-align: right;
-}
-
-#topic {
-    color: black;
-    font-size: .5em;
-    font-style: italic;
-}
-
-/*  =======================
-    Input Style
-========================  */
 
 input[type="email"]{
     text-align: left;
@@ -158,40 +73,114 @@ input[type=tel]:focus {
     border: 3px solid #555; 
 }
 
-textarea:focus {
-    border:  3px solid #555;
-  }
+/*  =======================
+    Placeholder Style
+=========================== */
+::placeholder {
+    color: black;
+    font-size: .5em;
+    font-style: italic;
+    text-align: right;
+}
+
 
 
 /*  =======================
-    Form Containers
-========================  */
+    Header and Intro Style
+=========================== */
+.site-header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(9, 39, 58);
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.intro p {
+    font-size: .8em;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0.5;
+}
+
+/*  =======================
+    Line Style
+=========================== */
+
+#line-1 {
+    display: flex;
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+    margin: 15px 5px 5px;
+}
+
+#line-2 {
+    display: flex;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 5px 0;
+}
+
+/*  =======================
+    Contact Style
+===========================  */
 #contact {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 10px 0 0 0;
+    border: none;
+    font-size: .8em;
+    margin: 20px 15px;
+    opacity: .5;
 }
 
-.flex-contact {
+#state  {
+    color: rgba(0, 0, 0, 0.2);
+ }
+/*  =======================
+    News Style
+=========================== */
+
+.news {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    opacity: .7;
-}
-
-.flex-contact > li > label {
-    display: flex;
     font-size: .8em;
+    opacity: .5;
+    border: none;
+    margin: 20px 15px;
 }
- 
-#contact h4 {
-    font-size: 1em;
-    opacity: 1;
+/*  =======================
+    Chex Style
+=========================== */
+
+input[type="radio"],
+input[type="checkbox"]{
+width:5%;
+margin-right: 0;
+
 }
 
 
 
+
+
+
+
+
+/*  =======================
+    Textarea Style
+=========================== */
 textarea {
     border: none;
     background-color: #ddd;
@@ -209,9 +198,13 @@ textarea::placeholder {
     text-align: left;
 }
 
+textarea:focus {
+    border:  3px solid #555;
+}
+
 /*  =======================
     Button Style
-========================  */
+===========================  */
 
 #signupbtn {
     display: flex;
@@ -232,8 +225,6 @@ textarea::placeholder {
 #signupbtn:hover {
     background-color: #254b5c;
 }
-
-
 
 /*  =======================
     Footer Style

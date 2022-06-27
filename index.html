@@ -10,50 +10,40 @@
     <title>The Code Review</title>
 </head>
 <body>
+
+<!-- This is the site Title and Intro Area contained in the SITE-HEADER flexbox -->    
     <header class="site-header">the code review</header>
-    <div class="intro">
-        <h4>Signup for our newsletter</h4>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
-    </div>
+        <div class="intro">
+            <h4>Signup for our newsletter</h4>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
 
+<!-- Two lines seperating the Intro from CONTACT area. Both have there own FlexBox Line-1 and Line-2-->
     <hr id="line-1">
-    <hr class="line-2">
+    <hr id="line-2">
 
-   
+<!-- This the area For user input in the CONTACT area.  Contained in the CONTACT FlexBox -->
     <form method="post">
         <fieldset id="contact">
-
             <legend><h4>Contact Information</h4></legend><br>
-        <ul class="flex-contact">
-            <li>
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="user_name" placeholder="Required" required>
-            </li>
 
-            <li>
                 <label for="mail">Email Address</label>
                 <input type="email" id="mail" name="user_email" placeholder="Required" required>
-            </li>
-
-            <li>
+          
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="user_phone" placeholder="0-123-456-7890">
-            </li>
-
-            <li>
+        
                 <label for="address">Street Address</label>
                 <input type="text" id="address" name="user_address" placeholder="Required">
-            </li>
-
-            <li> 
+            
                 <label for="city">City</label>
                 <input type="text" id="city" name="user_city" placeholder="Required">
-            </li> 
-
-            <li>
+           
                 <label for="state">State</label>
-                    <select id="state" name="state">
-                        <option value="select">Choose State</option>
+                    <select id="state" name="user-state">
+                        <option value="dont_select">Choose State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -106,68 +96,48 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                   </select>   
-            </li>
-
-            <li>
+     
                 <label for="code">Zip Code</label>
                 <input type="text" id="code" name="user_zipcode" placeholder="Required">
-            </li>
-        </ul>
-      
         </fieldset>
-
-        <hr class="line-2"> 
-        
-        <fieldset id="news">
+<!-- 2nd line seperating Contact info and Newsletter info-->
+        <hr id="line-2"> 
+<!-- This the area for User input in the NEWSLETTER area.  Contained in the NEWS FlexBox -->
+        <fieldset class="news">
             <legend><h4>Newsletter</h4></legend>
 
-        <ul >
-            <li>
                 <p>Select the newsletters you would like to recieve</p>
-            </li>
-        
-            <li>
-                <input type="checkbox" id="html" name="html">
-                <label for="html">HTML News</label>
-            </li>
+<!-- This the Area that users use the Checkbox.  They are children in the NEWS Flexbox, but are wrapped in thier own Flexbox called CHEX. -->
+                    <section id="chex">
+                        <label for="html">HTML News</label>
+                        <input type="checkbox" id="html" name="html">
+                        
+                        <label for="css">CSS News</label>
+                        <input type="checkbox" id="css" name="css">
+                        
+                        <label for="java">Javascript News</label>
+                        <input type="checkbox" id="java" name="java"> 
+                    </section>   
 
-            <li>
-                <input type="checkbox" id="css" name="css">
-                <label for="css">CSS News</label>
-            </li>
-
-            <li>
-                <input type="checkbox" id="java" name="java">
-                <label for="java">Javascript News</label>
-            </li>
-      
-        </ul>
-        
-         
-            
-        <section class="flex-news">
                 <p>Newsletter format</p>
-
-                <input type="radio" id="html-2" name="fav_language" value="html-2">
-                <label for="html-2">HTML</label>
-        
-
-                <input type="radio" id="plain-text" name="fav_language" value="plain-text">
-                <label for="plain-text">Plain text</label>
+<!-- This the Area that users use the Radio bottons.  They are children in the NEWS Flexbox, but are wrapped in thier own Flexbox called RADIO. -->
+                    <input type="radio" id="html-2" name="fav_language" value="html-2">
+                    <label for="html-2">HTML</label>
+            
+                    <input type="radio" id="plain-text" name="fav_language" value="plain-text">
+                    <label for="plain-text">Plain text</label>
 
                 <p>Other topics you'd like to hear about</p>
         
+<!-- This the textarea, Contained in the NEWS FlexBox -->
         
                 <label for="topics"></label>
                 <textarea  id="topics" name="topics" placeholder="Tell me what you want to hear about..."></textarea>
         
-
-
-       
-        <button id="signupbtn"
-        type="button">Sign Up</button>
+                <button id="signupbtn" type="button">Sign Up</button>
         </fieldset>
     </form>
+<!-- This the FOOTER Area.  Contained in the FOOTER FlexBox -->
 
     <footer>Copyright The Code Review</footer>
 </body>
