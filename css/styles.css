@@ -77,6 +77,7 @@ body {
 ==========================================================*/
 fieldset {
     border: none;
+    
 }
 
 .cont-heading {
@@ -89,6 +90,10 @@ fieldset {
     width: 50%;
 }
 
+#color {
+    background-color: rgb(155, 155, 155);
+}
+
 /*=============================================
             This defines the ROW container
 ===============================================*/
@@ -99,18 +104,10 @@ fieldset {
     margin: 20px 20px 20px;
 }
 
-
-
-
-
-
 input[type=text], 
 input[type=email],
-input[type=tel],
-select {
-    
+input[type=tel] {
     width: 100%;
-    padding: 20px;
     border: none;
     border-radius: 4px;
 }
@@ -123,6 +120,7 @@ select {
     list-style-type: none;
     opacity: .5;
     margin: 0 15px 0;
+    
 }
 
 h4 {
@@ -144,6 +142,7 @@ h4 {
 /*  =======================
     Styles for the placeholders inside CONTACT container
 =========================== */
+
 ::placeholder {
     color: black;
     font-size: .5em;
@@ -161,9 +160,10 @@ input, select {
     border: none;
     outline: none;
     text-align: left;
-   
+    padding: 20px;
     border-radius: 4px;
-    background-color: #cccece;
+    background-color: #b4b7b7;
+  
 }
 
 
@@ -293,20 +293,29 @@ input[type=tel]:focus {
         font-size: .8em;
     }
 
-    .row > input {
-        flex-shrink: ;
-    }
-
     .row label {
-        flex-basis: 45%;
+        flex-basis: 20%;
     }
+
+    .row input {
+        flex-basis: 80%;
+    }
+
+    #code {
+       flex-basis: 25%;
+    }
+
+    .row select {
+        width: 80%;
+    }
+
+
+
+   
     
     
 
-  label[for="code"]{
-   
-   
-  }
+ 
        
 
 }
