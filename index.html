@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Work+Sans:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>The Code Review</title>
 </head>
@@ -20,9 +20,9 @@
 
 <!-- Two lines seperating the Intro from CONTACT area. Both have there own FlexBox Line-1 and Line-2-->
     <hr id="line-1">
-    <hr id="line-2">
+    <hr class="line-2">
 
-<!-- This the area For user input in the CONTACT area.  Contained in the CONTACT FlexBox -->
+<!-- This the area For user input in the CONTACT area.  -->
     <form method="post">
         <fieldset >
             <legend><h4>Contact Information</h4></legend>
@@ -111,8 +111,8 @@
             </ul>
         </fieldset>
 <!-- 2nd line seperating Contact info and Newsletter info-->
-        <hr id="line-2"> 
-<!-- This the area for User input in the NEWSLETTER area.  Contained in the NEWS FlexBox -->
+        <hr class="line-2"> 
+<!-- This the area for User input in the NEWSLETTER area.  -->
         <fieldset id="color">
             <legend><h4>Newsletter</h4></legend>
 
@@ -140,7 +140,7 @@
                     </section>   
 
              
-<!-- This the Area that users use the Radio bottons.  They are children in the NEWS Flexbox, but are wrapped in thier own Flexbox called RADIO. -->
+<!-- This the Area that users use the Radio bottons.  -->
                     <section>
                         <ul class="news">
                             <li>Newsletter format</li>
@@ -159,18 +159,16 @@
                     </section>
                 
                 <div class="news" > 
-                    <p>Other topics you'd like to hear about</p>
+<!-- This the textarea -->
         
-<!-- This the textarea, Contained in the NEWS FlexBox -->
-        
-                    <label for="topics"></label>
+                    <label for="topics">Other topics you'd like to hear about</label>
                     <textarea  id="topics" name="topics" placeholder="Tell me what you want to hear about..."></textarea>
             
-                    <button id="signupbtn" type="button">Sign Up</button>
+                    <input type="submit" value="Sign Up">
                 </div> 
         </fieldset>
     </form>
-<!-- This the FOOTER Area.  Contained in the FOOTER FlexBox -->
+<!-- This the FOOTER Area.  -->
 
     <footer>Copyright The Code Review</footer>
 </body>
