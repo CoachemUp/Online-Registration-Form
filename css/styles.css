@@ -328,7 +328,7 @@ select:hover {
 
     #code::placeholder {
         color: black;
-        font-size: .45em;
+        font-size: .875em;
    
     }
 }
